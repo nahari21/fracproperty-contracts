@@ -1,0 +1,2474 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replacePauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceMintLimiterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMintLimiterAdmin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"name": "decimals",
+						"type": "uint8"
+					},
+					{
+						"name": "burnAddress",
+						"type": "address"
+					},
+					{
+						"name": "blacklist",
+						"type": "address"
+					},
+					{
+						"name": "whitelist",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isBurnAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "initialized",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeOwner",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfMinters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMintLimiter",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "minter",
+						"type": "address"
+					}
+				],
+				"name": "mintLimitOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removePauserAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllMintLimiterAdmins",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isBlacklist",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMinterAdmin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllMintLimiters",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newBlacklist",
+						"type": "address"
+					}
+				],
+				"name": "updateBlacklist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isWhitelisted",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newWhitelist",
+						"type": "address"
+					}
+				],
+				"name": "updateWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMinterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfMinterAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addPauserAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isPauser",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeUnpauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeMintLimiter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfMintLimiters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllUnpausers",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceUnpauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseMintLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeMintLimiterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removePauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newBurnAddress",
+						"type": "address"
+					}
+				],
+				"name": "updateBurnAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addOwner",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "burnAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllMinters",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "mintLimiterAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addUnpauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfPauserAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replacePauserAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addPauser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfUnpausers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfPausers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "whitelist",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfOwners",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMinter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "mintLimiters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllPauserAdmins",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "blacklist",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllPausers",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllMinterAdmins",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "setMintLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMinter",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFromBlacklisted",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owners",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceMinterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "pauserAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isUnpauser",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeMinterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isWhitelist",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isPauserAdmin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfMintLimiterAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "unpausers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceMintLimiter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMintLimiterAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "minterAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "pausers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addMintLimiter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "mintId",
+						"type": "int256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseMintLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "minters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isBlacklisted",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousWhitelist",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newWhitelist",
+						"type": "address"
+					}
+				],
+				"name": "WhitelistUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousBlacklist",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newBlacklist",
+						"type": "address"
+					}
+				],
+				"name": "BlacklistUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "TransferFromBlacklisted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "pauser",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "unpauser",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "UnpauserAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "UnpauserRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserAdminAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "PauserAdminRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousBurnAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newBurnAddress",
+						"type": "address"
+					}
+				],
+				"name": "BurnAddressUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "burner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Burn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "limit",
+						"type": "uint256"
+					}
+				],
+				"name": "MinterLimitUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "mintId",
+						"type": "int256"
+					}
+				],
+				"name": "Mint",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MintLimiterAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MintLimiterRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MintLimiterAdminAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MintLimiterAdminRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterAdminAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "MinterAdminRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "OwnerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "OwnerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"addMintLimiter(address)": {
+					"details": "Provide the given `account` with access to the mintLimiter role. Callable by an account with the mintLimiterAdmin role.",
+					"params": {
+						"account": "The account address being given access to the mintLimiter role"
+					}
+				},
+				"addMintLimiterAdmin(address)": {
+					"details": "Provide the given `account` with access to the mintLimiterAdmin role. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address being given access to the mintLimiterAdmin role"
+					}
+				},
+				"addMinter(address)": {
+					"details": "Provide the given `account` with access to the minter role. Callable by an account with the minterAdmin role.",
+					"params": {
+						"account": "The account address being given access to the minter role"
+					}
+				},
+				"addMinterAdmin(address)": {
+					"details": "Provide the given `account` with access to the minterAdmin role. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address being given access to the minterAdmin role"
+					}
+				},
+				"addOwner(address)": {
+					"details": "Provide the given `account` with access to the owner role. Callable by another account with access to the owner role.",
+					"params": {
+						"account": "The account address being given access to the owner role"
+					}
+				},
+				"addPauser(address)": {
+					"details": "Provide the given `account` with access to the pauser role. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"account": "The account address being given access to the pauser role"
+					}
+				},
+				"addPauserAdmin(address)": {
+					"details": "Provide the given `account` with access to the pauserAdmin role. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address being given access to the pauserAdmin role"
+					}
+				},
+				"addUnpauser(address)": {
+					"details": "Provide the given `account` with access to the unpauser role. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"account": "The account address being given access to the unpauser role"
+					}
+				},
+				"allowance(address,address)": {
+					"details": "Function to check the amount of tokens that an owner allowed to a spender.",
+					"params": {
+						"owner": "address The address which owns the funds.",
+						"spender": "address The address which will spend the funds."
+					},
+					"return": "A uint256 specifying the amount of tokens still available for the spender."
+				},
+				"approve(address,uint256)": {
+					"details": "Extension of the ERC20 approve function to enforce lifecycle behaviours."
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.",
+					"params": {
+						"owner": "The address to query the balance of."
+					},
+					"return": "An uint256 representing the amount owned by the passed address."
+				},
+				"blacklist()": {
+					"return": "The address of the `_blacklist` contract"
+				},
+				"burnAddress()": {
+					"return": "The `_burnAddress`, for which transfers to are treated as burns"
+				},
+				"decimals()": {
+					"return": "The number of decimals of the token"
+				},
+				"decreaseAllowance(address,uint256)": {
+					"details": "Extension of the ERC20 decreaseApproval function to enforce lifecycle behaviours."
+				},
+				"decreaseMintLimit(address,uint256)": {
+					"details": "Decrease the amount of tokens the given `_minter` is allowed to mint. Callable by an account with the mintLimiter role.",
+					"params": {
+						"minter": "The minter account whose limit is being decreased",
+						"value": "The amount to decrease the minter's limit by"
+					}
+				},
+				"increaseAllowance(address,uint256)": {
+					"details": "Extension of the ERC20 increaseApproval function to enforce lifecycle behaviours."
+				},
+				"increaseMintLimit(address,uint256)": {
+					"details": "Increase the amount of tokens the given `minter` is allowed to mint. Callable by an account with the mintLimiter role.",
+					"params": {
+						"minter": "The minter account whose limit is being increased",
+						"value": "The amount to increase the minter's limit by"
+					}
+				},
+				"initialize(string,string,uint8,address,address,address)": {
+					"details": "Initialize function used in place of a constructor. This is required over a normal due to the constructor caveat when using proxy contracts.",
+					"params": {
+						"blacklist": "The address of the AddressList contract being used as a blacklist",
+						"burnAddress": "The address for which transfers to are treated as burns",
+						"decimals": "The number decimals of the token",
+						"name": "The name of the token",
+						"symbol": "The symbol of the token",
+						"whitelist": "The address of the AddressList contract being used as a whitelist"
+					}
+				},
+				"initialized()": {
+					"return": "True if the contract has been initialized, otherwise false"
+				},
+				"isBlacklist(address)": {
+					"details": "Assert if the given `account` is the address of the current blacklist contract.",
+					"params": {
+						"account": "The address being queried"
+					},
+					"return": "True if the given `account` is the address of the current blacklist contract, otherwise false"
+				},
+				"isBlacklisted(address)": {
+					"details": "Asserts if the given `account` is blacklisted.",
+					"params": {
+						"account": "The account address to check"
+					},
+					"return": "True if the given `account` is blacklisted, otherwise false"
+				},
+				"isBurnAddress(address)": {
+					"details": "Assert if the given `account` is the burn address.",
+					"params": {
+						"account": "The address being queried"
+					},
+					"return": "True if the given `account` is the burn address, otherwise false"
+				},
+				"isMintLimiter(address)": {
+					"details": "Assert if the given `account` has been provided access to the mintLimiter role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the mintLimiter role, otherwise false"
+				},
+				"isMintLimiterAdmin(address)": {
+					"details": "Assert if the given `account` has been provided access to the mintLimiterAdmin role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the mintLimiterAdmin role, otherwise false"
+				},
+				"isMinter(address)": {
+					"details": "Assert if the given `account` has been provided access to the minter role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the minter role, otherwise false"
+				},
+				"isMinterAdmin(address)": {
+					"details": "Assert if the given `account` has been provided access to the minterAdmin role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the minterAdmin role, otherwise false"
+				},
+				"isOwner(address)": {
+					"details": "Assert if the given `account` has been provided access to the owner role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the owner role, otherwise false"
+				},
+				"isPauser(address)": {
+					"details": "Assert if the given `account` has been provided access to the pauser role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the pauser role, otherwise false"
+				},
+				"isPauserAdmin(address)": {
+					"details": "Assert if the given `account` has been provided access to the pauserAdmin role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the pauserAdmin role, otherwise false"
+				},
+				"isUnpauser(address)": {
+					"details": "Assert if the given `account` has been provided access to the unpauser role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the unpauser role, otherwise false"
+				},
+				"isWhitelist(address)": {
+					"details": "Assert if the given `account` is the address of the current whitelist contract.",
+					"params": {
+						"account": "The address being queried"
+					},
+					"return": "True if the given `account` is the address of the current whitelist contract, otherwise false"
+				},
+				"isWhitelisted(address)": {
+					"details": "Assert if the given `account` is whitelisted.",
+					"params": {
+						"account": "The account address to check"
+					},
+					"return": "True if the given `account` is whitelisted, otherwise false"
+				},
+				"mint(address,uint256,int256)": {
+					"details": "Mints new tokens to the given `_to` account. This function calls `Mintable._mint()` for minter limit logic, and emitting the Mint event. This function calls `ERC20._mint()` for balance/total supply logic, and emitting the Transfer event. Callable by an account with the minter role.",
+					"params": {
+						"mintId": "A unique identifier for the mint transaction",
+						"to": "The account the tokens are being minted to",
+						"value": "The amount of tokens being minted"
+					}
+				},
+				"mintLimitOf(address)": {
+					"details": "Gets the amount of tokens the given `minter` is limited to minting.",
+					"params": {
+						"minter": "The minter account whose limit is being queried"
+					},
+					"return": "The amount of tokens allowed to be minted"
+				},
+				"mintLimiterAdmins()": {
+					"return": "An array containing all account addresses with access to the mintLimiterAdmin role."
+				},
+				"mintLimiters()": {
+					"return": "An array containing all account addresses with access to the mintLimiter role."
+				},
+				"minterAdmins()": {
+					"return": "An array containing all account addresses with access to the minterAdmin role."
+				},
+				"minters()": {
+					"return": "An array containing all account addresses with access to the minter role."
+				},
+				"name()": {
+					"return": "The name of the token"
+				},
+				"numberOfMintLimiterAdmins()": {
+					"return": "The number of account addresses with access to the mintLimiterAdmin role."
+				},
+				"numberOfMintLimiters()": {
+					"return": "The number of account addresses with access to the mintLimiter role."
+				},
+				"numberOfMinterAdmins()": {
+					"return": "The number of account addresses with access to the minterAdmin role."
+				},
+				"numberOfMinters()": {
+					"return": "The number of account addresses with access to the minter role."
+				},
+				"numberOfOwners()": {
+					"return": "The number of account addresses with access to the owner role."
+				},
+				"numberOfPauserAdmins()": {
+					"return": "The number of account addresses with access to the pauserAdmin role."
+				},
+				"numberOfPausers()": {
+					"return": "The number of account addresses with access to the pauser role."
+				},
+				"numberOfUnpausers()": {
+					"return": "The number of account addresses with access to the unpauser role."
+				},
+				"owners()": {
+					"return": "An array containing all account addresses with access to the owner role."
+				},
+				"pause()": {
+					"details": "Pauses by setting `_paused` to true, to trigger stopped state. Callable by an account with the pauser role, or an account with the owner role."
+				},
+				"paused()": {
+					"details": "Query whether the contract is paused or not.",
+					"return": "True if the contract is paused, otherwise false"
+				},
+				"pauserAdmins()": {
+					"return": "An array containing all account addresses with access to the pauserAdmin role."
+				},
+				"pausers()": {
+					"return": "An array containing all account addresses with access to the pauser role."
+				},
+				"removeMintLimiter(address)": {
+					"details": "Remove access to the mintLimiter role for the given `account`. Callable by an account with the mintLimiterAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the mintLimiter role"
+					}
+				},
+				"removeMintLimiterAdmin(address)": {
+					"details": "Remove access to the mintLimiterAdmin role for the given `account`. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address having access removed from the mintLimiterAdmin role"
+					}
+				},
+				"removeMinter(address)": {
+					"details": "Extension of the MinterRole removeMinter function to additionally set minter limit to zero. Callable by an account with the minterAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the minter role"
+					}
+				},
+				"removeMinterAdmin(address)": {
+					"details": "Remove access to the minterAdmin role for the given `account`. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address having access removed from the minterAdmin role"
+					}
+				},
+				"removeOwner(address)": {
+					"details": "Remove access to the owner role for the given `account`. Callable by another account with access to the owner role.",
+					"params": {
+						"account": "The account address having access removed for the owner role"
+					}
+				},
+				"removePauser(address)": {
+					"details": "Remove access to the pauser role for the given `account`. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the pauser role"
+					}
+				},
+				"removePauserAdmin(address)": {
+					"details": "Remove access to the pauserAdmin role for the given `account`. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address having access removed from the pauserAdmin role"
+					}
+				},
+				"removeUnpauser(address)": {
+					"details": "Remove access to the unpauser role for the given `account`. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the unpauser role"
+					}
+				},
+				"replaceAllMintLimiterAdmins(address[])": {
+					"details": "Replace all accounts that have access to the mintLimiterAdmin role with the given array of `accounts`. Callable by an account with the owner role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing mintLimiterAdmins with"
+					}
+				},
+				"replaceAllMintLimiters(address[])": {
+					"details": "Replace all accounts that have access to the mintLimiter role with the given array of `accounts`. Callable by an account with the mintLimiterAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing mintLimiters with"
+					}
+				},
+				"replaceAllMinterAdmins(address[])": {
+					"details": "Replace all accounts that have access to the minterAdmin role with the given array of `accounts`. Callable by an account with the owner role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing minterAdmins with"
+					}
+				},
+				"replaceAllMinters(address[])": {
+					"details": "Replace all accounts that have access to the minter role with the given array of `accounts`. Callable by an account with the minterAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing minters with"
+					}
+				},
+				"replaceAllPauserAdmins(address[])": {
+					"details": "Replace all accounts that have access to the pauserAdmin role with the given array of `accounts`. Callable by an account with the owner role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing pauserAdmins with"
+					}
+				},
+				"replaceAllPausers(address[])": {
+					"details": "Replace all accounts that have access to the pauser role with the given array of `accounts`. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing pausers with"
+					}
+				},
+				"replaceAllUnpausers(address[])": {
+					"details": "Replace all accounts that have access to the unpauser role with the given array of `accounts`. Callable by an account with the unpauserAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing unpausers with"
+					}
+				},
+				"replaceMintLimiter(address,address)": {
+					"details": "Remove access to the mintLimiter role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the mintLimiterAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the mintLimiter role",
+						"previousAccount": "The account address having access removed from the mintLimiter role"
+					}
+				},
+				"replaceMintLimiterAdmin(address,address)": {
+					"details": "Remove access to the mintLimiterAdmin role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the owner role.",
+					"params": {
+						"newAccount": "The account address being given access to the mintLimiterAdmin role",
+						"previousAccount": "The account address having access removed from the mintLimiterAdmin role"
+					}
+				},
+				"replaceMinter(address,address)": {
+					"details": "Remove access to the minter role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the minterAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the minter role",
+						"previousAccount": "The account address having access removed from the minter role"
+					}
+				},
+				"replaceMinterAdmin(address,address)": {
+					"details": "Remove access to the minterAdmin role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the owner role.",
+					"params": {
+						"newAccount": "The account address being given access to the minterAdmin role",
+						"previousAccount": "The account address having access removed from the minterAdmin role"
+					}
+				},
+				"replacePauser(address,address)": {
+					"details": "Remove access to the pauser role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the pauserAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the pauser role",
+						"previousAccount": "The account address having access removed from the pauser role"
+					}
+				},
+				"replacePauserAdmin(address,address)": {
+					"details": "Remove access to the pauserAdmin role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the owner role.",
+					"params": {
+						"newAccount": "The account address being given access to the pauserAdmin role",
+						"previousAccount": "The account address having access removed from the pauserAdmin role"
+					}
+				},
+				"replaceUnpauser(address,address)": {
+					"details": "Remove access to the unpauser role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the unpauserAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the unpauser role",
+						"previousAccount": "The account address having access removed from the unpauser role"
+					}
+				},
+				"setMintLimit(address,uint256)": {
+					"details": "Set the amount of tokens the given `minter` is allowed to mint. Callable by an account with the mintLimiter role.",
+					"params": {
+						"minter": "The minter account whose limit is being set",
+						"value": "The amount to set the minter's limit to"
+					}
+				},
+				"symbol()": {
+					"return": "The symbol of the token"
+				},
+				"totalSupply()": {
+					"return": "Total number of tokens in existence."
+				},
+				"transfer(address,uint256)": {
+					"details": "Extension of the ERC20 transfer function to enforce lifecycle behaviours and support burns. If `to` is the `_burnAddress` the call will be treated as a burn and the caller must be whitelisted. If burning this function calls `Burnable._burn()` for additional burn logic, and emitting the Burn event. If burning this function calls `ERC20._burn()` for balance/total supply logic, and emitting the Transfer event.",
+					"params": {
+						"to": "The address to transfer to, or the `_burnAddress` if caller wishes to burn their tokens",
+						"value": "The amount of tokens to transfer, or to burn"
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Extension of the ERC20 approve function to enforce lifecycle behaviours."
+				},
+				"transferFromBlacklisted(address,address,uint256)": {
+					"details": "Transfer tokens from the given `from` account, if it's blacklisted, to the given `to` account. This function calls `Blacklistable_transferFromBlacklisted` for emitting the TransferFromBlacklisted event. This function calls `ERC20._transfer()` for transfer logic, and emitting the Transfer event. Callable by an account with the owner role.",
+					"params": {
+						"from": "The account tokens are being transferred from, which must be blacklisted",
+						"to": "The account the tokens are being transferred to",
+						"value": "The amount of tokens being transferred"
+					}
+				},
+				"unpause()": {
+					"details": "Unpauses by setting `_paused` to false, to return to normal state. Callable by an account with the unpauser role, or an account with the owner role."
+				},
+				"unpausers()": {
+					"return": "An array containing all account addresses with access to the unpauser role."
+				},
+				"updateBlacklist(address)": {
+					"details": "Update the `_blacklist` to a new contract address. Callable by an account with the owner role.",
+					"params": {
+						"newBlacklist": "The address of the new blacklist contract"
+					}
+				},
+				"updateBurnAddress(address)": {
+					"details": "Update the `_burnAddress` to a new address. Transfers to the `newBurnAddress` will be treated as burns. Callable by an account with the owner role.",
+					"params": {
+						"newBurnAddress": "The new address to set as the burn address"
+					}
+				},
+				"updateWhitelist(address)": {
+					"details": "Update the `_whitelist` to a new contract address. Callable by an account with the owner role.",
+					"params": {
+						"newWhitelist": "The address of the new whitelist contract"
+					}
+				},
+				"whitelist()": {
+					"return": "The address of the `_whitelist` contract"
+				}
+			},
+			"title": "TokenImpl"
+		},
+		"userdoc": {
+			"methods": {
+				"approve(address,uint256)": {
+					"notice": "Only use this function to set the spender allowance to zero. To increment allowed value use the increaseAllowance function. To decrement allowed value use the decreaseAllowance function."
+				},
+				"setMintLimit(address,uint256)": {
+					"notice": "This function should only be called when setting the minter's limit to zero."
+				},
+				"transfer(address,uint256)": {
+					"notice": "Transfer to the `_burnAddress` if you wish to redeem tokens."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TokenImpl.sol": "TokenImpl"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TokenImpl.sol": {
+			"keccak256": "0x3510cd130f0ce47742c62be728202b6ee9c7976dd7a909d4f697ba496b3ee3ab",
+			"urls": [
+				"bzzr://cba6fdffe5b5e76bf84cedbeeda09c1cd33807f15a513fb30f74d77fae4dbfe9"
+			]
+		},
+		"access/Roles.sol": {
+			"keccak256": "0x30a58175773293015034cde6e8219893cfdb96a9619ff4a6010fe1c79d0cd8a9",
+			"urls": [
+				"bzzr://9951ea8e0d5cd1e83c824b0049fb3587f62ec14e8cf430460d52d327aa567f3f"
+			]
+		},
+		"access/roles/ListerAdminRole.sol": {
+			"keccak256": "0x39061d678778ad790ab442bfbe89a5fee37c47b91ecd2d79eca950605f8f9ee2",
+			"urls": [
+				"bzzr://272caa1c2bcd8504746fd0498ca41cf9b8931ff2c95bedc362ecd1c2830c499a"
+			]
+		},
+		"access/roles/ListerRole.sol": {
+			"keccak256": "0xba305a8e095b7f9d736d478841b5c48d0d4e1422b560e076788bfc4ba0722e7c",
+			"urls": [
+				"bzzr://8ccdd34238dc54c6b4052959953685448725a9e2e542222bedbec764c3934e8e"
+			]
+		},
+		"access/roles/MintLimiterAdminRole.sol": {
+			"keccak256": "0x0999b581d5e221a0e064a351589db3367343adcd0555b0f16251ec1d6c173050",
+			"urls": [
+				"bzzr://db7bf0a204093f2696ed46e4d386c1cb4a936d8417b54dd10046f5d1a239eed7"
+			]
+		},
+		"access/roles/MintLimiterRole.sol": {
+			"keccak256": "0x1b11d193fa41fe6d18d1e4fccfe06d5bb553c8cd57925a1f3aef043e9d89c4f4",
+			"urls": [
+				"bzzr://232556bcd5f73510cb67405d605bd5cc7bee0b3c7b9ea3600e93d681921d5529"
+			]
+		},
+		"access/roles/MinterAdminRole.sol": {
+			"keccak256": "0x19196bdc98d0a6fbcf15a6242ab825bd61c0e30024e753d328febc919f743a43",
+			"urls": [
+				"bzzr://cfbfe9a2d09d652ee477bbe05ede4545bf460d8d5b4518206dcc76e934b55525"
+			]
+		},
+		"access/roles/MinterRole.sol": {
+			"keccak256": "0xdd68c73189abe55e0c269cd7cd82087653305171a9f4c3f3d7d4e942e5c487f4",
+			"urls": [
+				"bzzr://9f9e9cbc35f3279b7d4dc7ea6028ebe87e0eedb165be71f8eb7c76e277a75254"
+			]
+		},
+		"access/roles/OwnerRole.sol": {
+			"keccak256": "0x6e43e30b1beb791acd69210e96451f3a8447e1ad7be93f124a41b3726723cd75",
+			"urls": [
+				"bzzr://81e5ee6ef7461a07ecd0463556664b0ed37dd8b3c75a61ba1f3d4e7580032bdd"
+			]
+		},
+		"access/roles/PauserAdminRole.sol": {
+			"keccak256": "0x203945a296123a0a63c81e3f94661315c313f35ccdb10209c614534198a59118",
+			"urls": [
+				"bzzr://31af779b6a51afa6e15312baba6a595fc470e31301adc3073140d75814ffa53f"
+			]
+		},
+		"access/roles/PauserRole.sol": {
+			"keccak256": "0xa308860b2b1522a0617f0714e8119f7a8c6925bd2d857a9cf9a49516f6647ef1",
+			"urls": [
+				"bzzr://189080ba2dc450a22f88449262650557c9ca204efaacaa14e0129cf87ffee79b"
+			]
+		},
+		"access/roles/UnlisterRole.sol": {
+			"keccak256": "0xbb02a2081b3fbecf5768ce3c12007aab07be44c6bbf40398da149ca45cd0f0a3",
+			"urls": [
+				"bzzr://695819850edb5dd00eea14e17bd4d7598d49b8671c519a3fbdcf89c27320adac"
+			]
+		},
+		"access/roles/UnpauserRole.sol": {
+			"keccak256": "0xb5202cfe1aeede524b243f355b95ada0cf12c6931461966f732032ffb2428340",
+			"urls": [
+				"bzzr://935457d63adf8c94440eb326be1f44a392777ff29d3b0ccbef9dcdd3645b483a"
+			]
+		},
+		"lifecycle/Blacklistable.sol": {
+			"keccak256": "0x14c79fe4b874ab093f375729a33c1cbc63a3fa4f9e60dac82e52a0c8dc47606e",
+			"urls": [
+				"bzzr://2335fab2f60dc8144b6c264fe1a9af1dc6ebb9558c60aecb35d2e15ca7460f10"
+			]
+		},
+		"lifecycle/Burnable.sol": {
+			"keccak256": "0x2cde126f2b70378fc15637aa72c29400d8d8ea12476dff3b539893287a1ebfce",
+			"urls": [
+				"bzzr://47559ee701870b781e204e43874b08bbb6cef0e93c7b329f3c0d5de8f7e7035d"
+			]
+		},
+		"lifecycle/Mintable.sol": {
+			"keccak256": "0x908738f87ed45ad7ed02bb4b47250045caee81b50eba5d2a730aeb5fb8914c9e",
+			"urls": [
+				"bzzr://2fd921da8eae71e68e0f79f59679d80ca0f2f46fc5555f20775df03460c92158"
+			]
+		},
+		"lifecycle/Pausable.sol": {
+			"keccak256": "0x6003b3cc4c04979900ee227efcae040dc993e00d10813adb5a302feb25f65bbd",
+			"urls": [
+				"bzzr://da1bc48af3318bbd2ad410513466650926a5464e030fbf1ae581881bb1de7cea"
+			]
+		},
+		"lifecycle/Whitelistable.sol": {
+			"keccak256": "0xc3ffbc3d041f7ac803f2645e60a40164995658f7a7baffe3071f8b65244bb08a",
+			"urls": [
+				"bzzr://1445c47873293a7e51f83b68f1fb2f8a6a38bb02824a9c016d9cf4a627056f3d"
+			]
+		},
+		"math/SafeMath.sol": {
+			"keccak256": "0xe809135377e1eade300efd6e9e81cc506c86b0bc27334a32e13a6e3a3c593f2d",
+			"urls": [
+				"bzzr://e82ea97ed51fa85509145534c0de04354b205adeaf943010644ce7264ddff09b"
+			]
+		},
+		"storage/AddressList.sol": {
+			"keccak256": "0xd2902ea9f1a0fef3bab41c2d91593b115231d1a7dadef962ea114ebb2da81144",
+			"urls": [
+				"bzzr://7667c94f287f26c6ce02230d35e6136cc38e447380e4f345070aa2c2873ece01"
+			]
+		},
+		"token/ERC20.sol": {
+			"keccak256": "0xc6d4ee8db99593d73cfc09319cc65d8faecafb0e4f0cf20a36b2a04ef809d9bf",
+			"urls": [
+				"bzzr://723efb266684ca376f866e5bd842355979de4a90d7d9f3669f7e231ea804814d"
+			]
+		},
+		"token/IERC20.sol": {
+			"keccak256": "0x8358d92123cc694683f0d7fa32ad49f8c4aac8b037b890f57d070d55639bcbd5",
+			"urls": [
+				"bzzr://72a9a7238910afa63032f832ebffa68ab0ff3bf2bcda9361766ccc9188f305d4"
+			]
+		},
+		"utils/Address.sol": {
+			"keccak256": "0xe6f082f03d62aa133d3647e1a72ccc67b0f217b691bbf9d87cbd819ba60b7231",
+			"urls": [
+				"bzzr://b9ef9038f91b0d524c1c78a482b021cd8258490158c59c3f266d7ec5185ff32c"
+			]
+		}
+	},
+	"version": 1
+}

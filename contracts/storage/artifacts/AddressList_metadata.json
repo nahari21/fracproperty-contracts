@@ -1,0 +1,889 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "initialized",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeOwner",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "listers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfListerAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllUnlisters",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "listerAdmins",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceLister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfUnlisters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllListers",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceListerAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfListers",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "onList",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addOwner",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isUnlister",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addLister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addUnlister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isListerAdmin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newName",
+						"type": "string"
+					}
+				],
+				"name": "updateName",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numberOfOwners",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owners",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeLister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "replaceAllListerAdmins",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "previousAccount",
+						"type": "address"
+					},
+					{
+						"name": "newAccount",
+						"type": "address"
+					}
+				],
+				"name": "replaceUnlister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addListerAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeUnlister",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeListerAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "unlisters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isLister",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "AddressAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "AddressRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "UnlisterAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "UnlisterRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ListerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ListerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ListerAdminAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ListerAdminRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "OwnerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "OwnerRemoved",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"addAddress(address)": {
+					"details": "Add the given `account` to the list. Callable by an account with the lister role.",
+					"params": {
+						"account": "Account to add to the list"
+					}
+				},
+				"addLister(address)": {
+					"details": "Provide the given `account` with access to the lister role. Callable by an account with the listerAdmin role.",
+					"params": {
+						"account": "The account address being given access to the lister role"
+					}
+				},
+				"addListerAdmin(address)": {
+					"details": "Provide the given `account` with access to the listerAdmin role. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address being given access to the listerAdmin role"
+					}
+				},
+				"addOwner(address)": {
+					"details": "Provide the given `account` with access to the owner role. Callable by another account with access to the owner role.",
+					"params": {
+						"account": "The account address being given access to the owner role"
+					}
+				},
+				"addUnlister(address)": {
+					"details": "Provide the given `account` with access to the unlister role. Callable by an account with the listerAdmin role.",
+					"params": {
+						"account": "The account address being given access to the unlister role"
+					}
+				},
+				"initialize(string)": {
+					"details": "Initialize function used in place of a constructor. This is required over a normal due to the constructor caveat when using proxy contracts.",
+					"params": {
+						"name": "The name of the address list"
+					}
+				},
+				"initialized()": {
+					"return": "True if the contract has been initialized, otherwise false"
+				},
+				"isLister(address)": {
+					"details": "Assert if the given `account` has been provided access to the lister role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the lister role, otherwise false"
+				},
+				"isListerAdmin(address)": {
+					"details": "Assert if the given `account` has been provided access to the listerAdmin role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the listerAdmin role, otherwise false"
+				},
+				"isOwner(address)": {
+					"details": "Assert if the given `account` has been provided access to the owner role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the owner role, otherwise false"
+				},
+				"isUnlister(address)": {
+					"details": "Assert if the given `account` has been provided access to the unlister role.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the given `account` has access to the unlister role, otherwise false"
+				},
+				"listerAdmins()": {
+					"return": "An array containing all account addresses with access to the listerAdmin role."
+				},
+				"listers()": {
+					"return": "An array containing all account addresses with access to the lister role."
+				},
+				"name()": {
+					"return": "The name of the AddressList"
+				},
+				"numberOfListerAdmins()": {
+					"return": "The number of account addresses with access to the listerAdmin role."
+				},
+				"numberOfListers()": {
+					"return": "The number of account addresses with access to the lister role."
+				},
+				"numberOfOwners()": {
+					"return": "The number of account addresses with access to the owner role."
+				},
+				"numberOfUnlisters()": {
+					"return": "The number of account addresses with access to the unlister role."
+				},
+				"onList(address)": {
+					"details": "Query whether the the given `account` is on this list or not.",
+					"params": {
+						"account": "The account address being queried"
+					},
+					"return": "True if the account is on the list, otherwise false"
+				},
+				"owners()": {
+					"return": "An array containing all account addresses with access to the owner role."
+				},
+				"removeAddress(address)": {
+					"details": "Remove the given `account` from the list. Callable by an account with the unlister role.",
+					"params": {
+						"account": "Account to remove from the list"
+					}
+				},
+				"removeLister(address)": {
+					"details": "Remove access to the lister role for the given `account`. Callable by an account with the listerAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the lister role"
+					}
+				},
+				"removeListerAdmin(address)": {
+					"details": "Remove access to the listerAdmin role for the given `account`. Callable by an account with the owner role.",
+					"params": {
+						"account": "The account address having access removed from the listerAdmin role"
+					}
+				},
+				"removeOwner(address)": {
+					"details": "Remove access to the owner role for the given `account`. Callable by another account with access to the owner role.",
+					"params": {
+						"account": "The account address having access removed for the owner role"
+					}
+				},
+				"removeUnlister(address)": {
+					"details": "Remove access to the unlister role for the given `account`. Callable by an account with the listerAdmin role.",
+					"params": {
+						"account": "The account address having access removed from the unlister role"
+					}
+				},
+				"replaceAddress(address,address)": {
+					"details": "Replace the `previousAccount` in the list with the `newAccount`. Callable by an account with both the lister role and unlister role.",
+					"params": {
+						"newAccount": "Account to add to the list",
+						"previousAccount": "Account to remove from the list"
+					}
+				},
+				"replaceAllListerAdmins(address[])": {
+					"details": "Replace all accounts that have access to the listerAdmin role with the given array of `accounts`. Callable by an account with the owner role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing listerAdmins with"
+					}
+				},
+				"replaceAllListers(address[])": {
+					"details": "Replace all accounts that have access to the lister role with the given array of `accounts`. Callable by an account with the listerAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing listers with"
+					}
+				},
+				"replaceAllUnlisters(address[])": {
+					"details": "Replace all accounts that have access to the unlister role with the given array of `accounts`. Callable by an account with the unlisterAdmin role.",
+					"params": {
+						"accounts": "An array of account addresses to replace all existing unlisters with"
+					}
+				},
+				"replaceLister(address,address)": {
+					"details": "Remove access to the lister role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the listerAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the lister role",
+						"previousAccount": "The account address having access removed from the lister role"
+					}
+				},
+				"replaceListerAdmin(address,address)": {
+					"details": "Remove access to the listerAdmin role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the owner role.",
+					"params": {
+						"newAccount": "The account address being given access to the listerAdmin role",
+						"previousAccount": "The account address having access removed from the listerAdmin role"
+					}
+				},
+				"replaceUnlister(address,address)": {
+					"details": "Remove access to the unlister role for the `previousAccount` and give access to the `newAccount`. Callable by an account with the unlisterAdmin role.",
+					"params": {
+						"newAccount": "The account address being given access to the unlister role",
+						"previousAccount": "The account address having access removed from the unlister role"
+					}
+				},
+				"unlisters()": {
+					"return": "An array containing all account addresses with access to the unlister role."
+				},
+				"updateName(string)": {
+					"details": "Update the name of the list. Callable by an account with the listerAdmin role.",
+					"params": {
+						"newName": "The new display name of the list"
+					}
+				}
+			},
+			"title": "AddressList"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"storage/AddressList.sol": "AddressList"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"access/Roles.sol": {
+			"keccak256": "0x30a58175773293015034cde6e8219893cfdb96a9619ff4a6010fe1c79d0cd8a9",
+			"urls": [
+				"bzzr://9951ea8e0d5cd1e83c824b0049fb3587f62ec14e8cf430460d52d327aa567f3f"
+			]
+		},
+		"access/roles/ListerAdminRole.sol": {
+			"keccak256": "0x39061d678778ad790ab442bfbe89a5fee37c47b91ecd2d79eca950605f8f9ee2",
+			"urls": [
+				"bzzr://272caa1c2bcd8504746fd0498ca41cf9b8931ff2c95bedc362ecd1c2830c499a"
+			]
+		},
+		"access/roles/ListerRole.sol": {
+			"keccak256": "0xba305a8e095b7f9d736d478841b5c48d0d4e1422b560e076788bfc4ba0722e7c",
+			"urls": [
+				"bzzr://8ccdd34238dc54c6b4052959953685448725a9e2e542222bedbec764c3934e8e"
+			]
+		},
+		"access/roles/OwnerRole.sol": {
+			"keccak256": "0x6e43e30b1beb791acd69210e96451f3a8447e1ad7be93f124a41b3726723cd75",
+			"urls": [
+				"bzzr://81e5ee6ef7461a07ecd0463556664b0ed37dd8b3c75a61ba1f3d4e7580032bdd"
+			]
+		},
+		"access/roles/UnlisterRole.sol": {
+			"keccak256": "0xbb02a2081b3fbecf5768ce3c12007aab07be44c6bbf40398da149ca45cd0f0a3",
+			"urls": [
+				"bzzr://695819850edb5dd00eea14e17bd4d7598d49b8671c519a3fbdcf89c27320adac"
+			]
+		},
+		"storage/AddressList.sol": {
+			"keccak256": "0xd2902ea9f1a0fef3bab41c2d91593b115231d1a7dadef962ea114ebb2da81144",
+			"urls": [
+				"bzzr://7667c94f287f26c6ce02230d35e6136cc38e447380e4f345070aa2c2873ece01"
+			]
+		}
+	},
+	"version": 1
+}
