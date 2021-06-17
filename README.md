@@ -13,7 +13,6 @@ Our technology not only gives investors full control and flexibility in managing
 - [@MohammedGanem](https://www.github.com/MohammedGanem)
 - [@DanialKzm](https://www.github.com/danialkzm)
 
-  
 # Contract Addresses
 
 | Contract  | Ethereum Address                                                                                                      |
