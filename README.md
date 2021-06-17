@@ -18,9 +18,9 @@ Our technology not only gives investors full control and flexibility in managing
 
 | Contract  | Ethereum Address                                                                                                      |
 | --------- | --------------------------------------------------------------------------------------------------------------------- |
-| Frac      | [0x442Ea72e5303bFaB6b4c7BA84ff0D3E66Edc5Cd5](https://bscscan.com/address/0x442ea72e5303bfab6b4c7ba84ff0d3e66edc5cd5)   |
-| Blacklist | [0xdE40A3c26F3af423E0d0EcC30ead42B140E16B51](https://etherscan.io/address/0xdE40A3c26F3af423E0d0EcC30ead42B140E16B51) |
-| Whitelist | [0x21860dE6d3ba2fAC843f6864a0FAE8e97387bF66](https://etherscan.io/address/0x21860dE6d3ba2fAC843f6864a0FAE8e97387bF66) |
+| Frac      | [0x442Ea72e5303bFaB6b4c7BA84ff0D3E66Edc5Cd5](https://bscscan.com/address/0x442ea72e5303bfab6b4c7ba84ff0d3e66edc5cd5) |
+| Blacklist | [0xAB7104a839C86e6Fd1Ea4E4a1238833A717848ea](https://bscscan.com/address/0xAB7104a839C86e6Fd1Ea4E4a1238833A717848ea) |
+| Whitelist | [0x26c16Df575b1306897E50c1088B42B1b899b0452](https://bscscan.com/address/0x26c16Df575b1306897E50c1088B42B1b899b0452) |
 
 # Links
 
